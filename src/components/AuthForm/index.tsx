@@ -21,6 +21,7 @@ export interface Auth {
     name?: string
     password: string
 }
+
 interface AuthFormProps {
     authFormeTitle: string
     subimitFormButtonText: string

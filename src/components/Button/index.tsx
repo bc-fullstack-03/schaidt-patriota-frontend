@@ -15,7 +15,8 @@ function Button({ asChild, children, className , ...props}: ButtonProps){
             className={clsx(
                 "py-3 px-4 bg-cyan-500 rounded font-semibold text-black text-sm e-full transition-colors hover:bg-cyan-300", 
                 className
-                )}
+            )}
+            {...props}
         >{children}</Comp>
     )
 }
