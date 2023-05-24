@@ -3,6 +3,7 @@ import Heading from "../Heading";
 import Text from "../Text";
 import PostItem from "../PostItem";
 import { Post } from "../../Model/Post";
+import AlertDialogDelete from "../AlertDialogDelete";
 
 interface ProfileProps {
   posts: Post[];
@@ -25,6 +26,7 @@ function Profile({ posts, handleLike }: ProfileProps) {
             <div className="flex items-center flex-1 my-4">
               <UserCircle size={48} weight="light" />
               <Text className="font-extrabold ml-2">{user}</Text>
+              <AlertDialogDelete />
             </div>
           </div>
         </Heading>

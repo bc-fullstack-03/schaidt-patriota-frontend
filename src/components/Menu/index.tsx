@@ -24,7 +24,7 @@ function Menu(props: MenuProps){
     function handleLogout() {
         localStorage.clear();
         navigate("/");
-      }
+    }
     return (
         <div className="basis-1/6 border-r border-slate-400 ml-4 pt-4">
             <div className="flex items-center ml-4">
