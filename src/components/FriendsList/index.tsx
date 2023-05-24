@@ -85,13 +85,13 @@ function FriendsList() {
                 <div className="flex items-center ml-2">
                   <Text>
                     {profile.following.length > 0 &&
-                      `${profile.following.length} seguindo`}
+                      `Seguindo ${profile.following.length}`}
                   </Text>
                 </div>
                 <div className="flex items-center ml-2">
                   <Text>
                     {profile.followers.length > 0 &&
-                      `${profile.followers.length} seguidores`}
+                      `Seguidores ${profile.followers.length}`}
                   </Text>
                 </div>
                 <Button

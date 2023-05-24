@@ -1,11 +1,8 @@
-import { useNavigate } from "react-router-dom";
 import { UserCircle } from "phosphor-react";
 import Heading from "../Heading";
 import Text from "../Text";
-import Button from "../Button";
 import PostItem from "../PostItem";
 import { Post } from "../../Model/Post";
-import { getProfile } from "../../services/auth";
 
 interface ProfileProps {
   posts: Post[];
@@ -13,13 +10,7 @@ interface ProfileProps {
 }
 
 function Profile({ posts, handleLike }: ProfileProps) {
-  const navigate = useNavigate();
   const user = localStorage.getItem("user");
-
-  function handleLogout() {
-    localStorage.clear();
-    navigate("/");
-  }
 
   const userPosts = posts.filter((post: Post) => post.profile.name === user);
 
@@ -35,7 +26,6 @@ function Profile({ posts, handleLike }: ProfileProps) {
               <UserCircle size={48} weight="light" />
               <Text className="font-extrabold ml-2">{user}</Text>
             </div>
-            <Button onClick={handleLogout}>Sair</Button>
           </div>
         </Heading>
         <section>
