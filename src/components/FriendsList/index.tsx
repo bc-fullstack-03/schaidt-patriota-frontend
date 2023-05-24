@@ -95,12 +95,13 @@ function FriendsList() {
                   </Text>
                 </div>
                 <Button
-                  className="my-4 ml-2"
-                  onClick={() => handleFollow(profile._id)}
-                  disabled={profile.followers.includes(myProfileId)}
+                    className={`my-4 ml-2 ${profile.followers.includes(myProfileId) ? "bg-gray-400 hover:bg-gray-400" : ""}`}
+                    onClick={() => handleFollow(profile._id)}
+                    disabled={profile.followers.includes(myProfileId)}
                 >
-                  Seguir
+                    {profile.followers.includes(myProfileId) ? "Seguindo" : "Seguir"}
                 </Button>
+
               </li>
             );
           })}
