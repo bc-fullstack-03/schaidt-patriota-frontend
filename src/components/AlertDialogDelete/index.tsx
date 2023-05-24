@@ -6,11 +6,16 @@ import api from '../../services/api';
 
 function AlertDialogDelete(){
     const navigate = useNavigate();
-    function handleDelete() {
-        api.delete('/users/me', getAuthHeader())
+
+    async function handleDelete() {
+      try {
+        await api.delete('/users/me', getAuthHeader())
         localStorage.clear();
         alert('Conta deletada com sucesso')
         navigate("/");
+      } catch (err) {
+        alert('Erro ao tentar excluir a conta')
+      }       
     }
 
     return (

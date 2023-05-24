@@ -12,7 +12,6 @@ interface ProfileProps {
 
 function Profile({ posts, handleLike }: ProfileProps) {
   const user = localStorage.getItem("user");
-
   const userPosts = posts.filter((post: Post) => post.profile.name === user);
 
   return (
@@ -26,6 +25,7 @@ function Profile({ posts, handleLike }: ProfileProps) {
             <div className="flex items-center flex-1 my-4">
               <UserCircle size={48} weight="light" />
               <Text className="font-extrabold ml-2">{user}</Text>
+              <Text> AQUI</Text>
               <AlertDialogDelete />
             </div>
           </div>
