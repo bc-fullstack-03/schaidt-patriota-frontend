@@ -19,7 +19,7 @@ function Login(){
             localStorage.setItem("accessToken", data.accessToken)
             navigate("/home")
         } catch (err) {
-            alert("Erro na criação de usuário!")
+            alert("Erro no login de usuário!")
         }
     }
 
