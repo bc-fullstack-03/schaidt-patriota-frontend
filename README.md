@@ -4,7 +4,7 @@ Bem-vindo ao Projeto Frontend 🦜 Parrot, a interface do usuário desenvolvida 
 
 ## Desenvolvedor 👨‍💻
 
-- [Schaidt Patriota](https://www.linkedin.com/in/schaidt-patriota-ab8b13202/) ✉️
+- [Schaidt Patriota](https://github.com/SchaidtP)
 
 ## Tecnologias Utilizadas 🚀
 
